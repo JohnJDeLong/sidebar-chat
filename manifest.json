@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Pixel",
+  "version": "1.0.0",
+  "permissions": ["sidePanel", "tabs", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Pixel",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": { "service_worker": "service_worker.js" },
+  "side_panel": { "default_path": "sidepanel.html" }
+}
